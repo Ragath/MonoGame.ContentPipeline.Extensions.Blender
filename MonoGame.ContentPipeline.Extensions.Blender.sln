@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26127.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGame.ContentPipeline.Extensions.Blender", "MonoGame.ContentPipeline.Extensions.Blender\MonoGame.ContentPipeline.Extensions.Blender.csproj", "{6236B602-6184-4F47-88F0-9A064D39C86C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGame.ContentPipeline.Extensions.Blender.Tests", "MonoGame.ContentPipeline.Extensions.Blender.Tests\MonoGame.ContentPipeline.Extensions.Blender.Tests.csproj", "{48887AE4-CB61-4690-86CE-25C54060F622}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game1.WindowsDX", "Game1.WindowsDX\Game1.WindowsDX.csproj", "{9340CC80-409B-49F4-97CB-1DCF47BC1862}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6236B602-6184-4F47-88F0-9A064D39C86C} = {6236B602-6184-4F47-88F0-9A064D39C86C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Debug|x86.Build.0 = Debug|Any CPU
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Release|x86.ActiveCfg = Release|Any CPU
+		{6236B602-6184-4F47-88F0-9A064D39C86C}.Release|x86.Build.0 = Release|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Debug|x86.Build.0 = Debug|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Release|x86.ActiveCfg = Release|Any CPU
+		{48887AE4-CB61-4690-86CE-25C54060F622}.Release|x86.Build.0 = Release|Any CPU
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Debug|Any CPU.Build.0 = Debug|x86
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Debug|x86.ActiveCfg = Debug|x86
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Debug|x86.Build.0 = Debug|x86
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Release|Any CPU.ActiveCfg = Release|x86
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Release|Any CPU.Build.0 = Release|x86
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Release|x86.ActiveCfg = Release|x86
+		{9340CC80-409B-49F4-97CB-1DCF47BC1862}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
