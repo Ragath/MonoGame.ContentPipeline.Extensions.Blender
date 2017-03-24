@@ -9,7 +9,17 @@ namespace MonoGame.ContentPipeline.Extensions.Blender
     {
         static string[] StandardBlenderPaths { get; } = { "blender.exe", @"C:\Program Files\Blender Foundation\Blender\blender.exe" };
         static string BlenderEXE { get; set; }
-        public static string PythonScript { get; } = "import bpy;import sys;bpy.ops.export_scene.fbx(filepath=sys.argv[sys.argv.index('--') + 1], axis_forward='-Z', axis_up='Y')";
+        public static string PythonScript { get; } =
+            "import bpy;" +
+            "import sys;" +
+            //"for ob in bpy.data.objects: if ob.type=='ARMATURE': ob.action=bpy.data.actions[-1];" +
+            "bpy.ops.export_scene.fbx(filepath=sys.argv[sys.argv.index('--') + 1], " +
+            "apply_unit_scale=False, object_types={'ARMATURE', 'MESH'}, " +
+            "axis_forward='-Z', " +
+            "axis_up='Y', " +
+            "bake_anim_use_nla_strips=False, " +
+            "add_leaf_bones=False, " +
+            "use_anim_action_all=True);";
 
         /// <summary>
         /// Export fbx with Forward: -Z, Up: Y
